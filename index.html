@@ -84,7 +84,7 @@ footer{padding:40px 0;border-top:1px solid var(--line);color:var(--mute);font-si
 <h2>Say it in Erene</h2>
 <p class="sub">Tap a phrase to copy it, then send it to someone in the community. The script above each phrase is Erene written in its own font.</p>
 <div class="phrases">
-<button class="ph" data-t="Esohar mie laru!"><span class="er" aria-hidden="true"></span><strong>Esohar mie laru!</strong><span>Greetings, my friend!</span></button>
+<button class="ph" data-t="Esohar mue laru!"><span class="er" aria-hidden="true"></span><strong>Esohar mie laru!</strong><span>Greetings, my friend!</span></button>
 <button class="ph" data-t="Dasdon"><span class="er" aria-hidden="true"></span><strong>Dasdon</strong><span>Thank you</span></button>
 <button class="ph" data-t="Malretur"><span class="er" aria-hidden="true"></span><strong>Malretur</strong><span>You’re welcome</span></button>
 <button class="ph" data-t="Daro mue laru."><span class="er" aria-hidden="true"></span><strong>Daro mue laru.</strong><span>Thank you, my friend.</span></button>
@@ -97,14 +97,13 @@ footer{padding:40px 0;border-top:1px solid var(--line);color:var(--mute);font-si
 <p>Add <code>-en</code> to a countable noun to make it plural: <em>laru</em> (friend) becomes <em>laruen</em>.</p>
 <p>Add <code>-esse</code> to build a noun, and <code>-urdiame</code> to turn a verb into a gerund.</p>
 <p>Pronouns attach to the verb. <em>Emue</em> means “I am”, and <em>ture</em> means “you are” or “your”.</p>
-<p>Endings called thesmo forms signal the speaker’s gender, the rank of the person you address and the register of the topic.</p>
 <p>Words are built from roots. <em>Naru</em> (water) gives <em>naruen</em>, and <em>mesmano</em> (love) gives <em>mesmane</em>, “to love”.</p>
 </div>
 </div></section>
 
 <section id="dictionary"><div class="wrap">
 <h2>Dictionary</h2>
-<p class="sub">Search Erene or English. Every entry here comes from the Erene word list.</p>
+<p class="sub">Search Erene or English across all 1334 words and phrases. For categories, grammar notes and full texts, open the <a href="https://claude.ai/artifact/4kV5GDoB4LEMFisnRBY2JM">full dictionary</a>.</p>
 <div class="tools">
 <div><input id="dq" type="search" placeholder="Try fire, heart, friend, or valor" aria-label="Search the dictionary"><div id="dres" aria-live="polite"></div></div>
 <div>
@@ -135,8 +134,9 @@ footer{padding:40px 0;border-top:1px solid var(--line);color:var(--mute);font-si
 <p>Its sport is <em>rasso</em>: nine players a side carry a ball while surfing toward a finish line, a mix of American football and tennis played on water.</p>
 <p>Ralu, whose name is also the number seventeen, is the almighty creator. Legend says he lived 171717 years ago, was thrown by seven traitors into the black flames of Doros, and ascended. The scriptures are the 17 books of Hanor.</p>
 <p>Language and life go together. At weddings the bride cuts her left palm and the groom his right, and they clasp hands so their blood mixes as they swear their vows.</p>
-<p>Hospitality has a taste too: <em>ghamasso</em>, potatoes baked in an egg, milk and cheese batter, served with grilled deer meat. Darleks, the pet birds whose spread wings look like living kaleidoscopes, stay out of the kitchen.</p>
+<p>Hospitality has a taste too: <em>ghamasso</em>, potatoes baked in an egg, milk and cheese batter, served with grilled deer meat. The Darleks are pet birds whose spread wings look like living kaleidoscopes.</p>
 <p>A formal greeting for guests: <em>Esohar. Ahaeret mue laruen desa malhar deroset avlaset elrohim belhar belharet malor Aranor belhet.</em> It means: greetings, friends, welcome to our dear ancient kingdom, protected by the gods and kept by eternal flames.</p>
+<p>There is far more: how the palace, parliament and church share power, the units and scientists, the royal exile of Benerius, and the holiday of Haet. Read it all on the <a href="https://claude.ai/artifact/VWNFqxPmpicGnnGdjR6AiC">Euredius page</a>.</p>
 </div>
 </div></section>
 
@@ -161,172 +161,11 @@ footer{padding:40px 0;border-top:1px solid var(--line);color:var(--mute);font-si
 </ol>
 </div></section>
 
-<footer><div class="wrap">Erene belongs to everyone who speaks it. <em>Malretur</em> for visiting.</div></footer>
+<footer><div class="wrap">Erene belongs to everyone who speaks it. <em>Dasdon</em> for visiting.</div></footer>
 <div id="toast" role="status"></div>
 
 <script>
-const D=`Esohar|greetings
-Eso|hi
-Dasdon|thank you
-Malretur|you’re welcome
-Nessew|please
-Hidi|sorry
-Hgojar|okay, good
-Ertran|bad
-Der|yes
-Nieh|no
-Nert|none
-Ners|nope
-Qet|what
-Qao|where
-Qey|when
-Qaem|who
-Mae|how
-Dahen|why
-Em|and
-Enne|but
-Retme|with
-Emue|I am
-Ture|you are, your
-Mue|my
-Laru|friend
-Asdaron|people, folk, nation
-Mama|mother
-Gere|dad
-Veren|parents
-Nono|grandmother
-Rew|grandfather
-Haqe|sister
-Gane|brother
-Opte|son
-Focho|daughter
-Polle|girl
-Samme|boy
-Penne|woman
-Kanne|man
-Zaza|kid
-Alkatiel|heart
-Olreket|blood
-Ardent|life
-Arsont|death
-Mesmano|love
-Mesmane|to love
-Meros|memory
-Lakone|to remember
-Fakire|to forget
-Alhamanorion|eternity
-Rum onor|truth
-Ehsaed|honor
-Elakea|justice
-Morotos|freedom
-Elhamion|loyalty
-Ihamdindorenor|wisdom
-Jaranomeranor|courage
-Ghenadion|virtue
-Ralhar|faith
-Kjanora|choice
-Vbalo|grief
-Vamharo|fear
-Loighessesse|forgiveness
-Eppel|empathy
-Aranor|fire
-Candhor|light
-Candhare|to light
-Maret|star
-Maron|star
-Mne|sun
-Lmata|moon
-Ilion|sky
-Qalianion|cosmos
-Daemailia|universe
-Meta|world
-Yolp|ocean
-Naram|water
-Bera|river
-Nunchime|forest
-Thele|tree
-Harlema|flower
-Xcanta|mountain
-Qrem|rain
-Valmera|wind
-Htera|earth
-Far|ashes
-Folp|smoke
-Tjar|day
-Rarda|night
-Dasar|morning
-Tjero|time
-Tjer|now
-Bjalo|today
-Ahana|year
-Valor|to speak
-Hanar|to sing
-Tepore|to read
-Rtene|to understand
-Rtese|to have
-Werde|to want
-Zende|to sleep
-Ahone|to become
-Arse|to die
-Arde|to live
-Darse|to be
-Nere|to think
-Qwere|to ask
-Warotse|to know
-Uprelle|to save
-Ikielle|to change
-Wemir|to eat
-Wemar|to laugh
-Sfarher|to drink
-Qope|to fly
-Haet|go
-Telsar|silence
-Dharhar|king
-Dharharer|kingdom
-Ermaldieliana|queen
-Amlassa|lord
-Dielmara|lady
-Ealio|empire
-Elrohim|god
-Altad|angel
-Ralu|seventeen, the almighty creator
-Harue|church
-Haruen|Bible
-Hanaro|song
-Webaho|poetry
-Aranea|music
-Tsanora|guitar
-Machem|piano
-Teposo|book
-Tassa|dance
-Hassa|coffee
-Sa|tea
-Jana|food
-Lallo|milk
-Gomen|cheese
-Yet|apple
-Gatoma|sugar
-Zhemoir|chocolate
-Dhaeret|home
-Mesa|smile
-Nahsena|north
-Utioala|south
-Qahsana|east
-Yerferhalioa|west
-Remioa|center
-Kjara|red
-Noriel|green
-Oma|blue
-Polmera|golden yellow
-Dasamoel|black
-Qolleoma|white
-Ghassa|democracy
-Dhrahir|war
-Mensqwe|peace
-Eron|the currency of Euredius
-Euredi|people of Euredius
-Rasso|the water sport of Euredius
-Oprie|alphabet`.split('\n').map(l=>l.split('|'));
+const D=[["Esohar","greetings"],["Eso","hi"],["Dasdon","thank you"],["Malretur","you’re welcome / you're welcome"],["Nessew","please"],["Hidi","sorry"],["Hgojar","okay, good"],["Ertran","bad"],["Der","yes"],["Nieh","no"],["Qet","what"],["Qao","where"],["Ablakat","formula"],["Adalaorion","gear"],["Adalaorionkollo","gear mechanism"],["Adilfa Hitlion","Adolf Hitler"],["Aeridielion","princess"],["Aerisielion","prince"],["Aertara","victory"],["Aertare","to win"],["Ahaeret","however, although"],["Ahana","year"],["Ahilion","Achilles"],["Ahone","to become"],["Akhaim","architecture"],["Alhamanorion","eternity"],["Alhanor","casualty"],["Alhare","to rise"],["Alhatelilieha","elephant"],["Alhater","war"],["Alhe","to cause"],["Alhet","trunk"],["Alho","cause"],["Alkatiel","heart"],["Alkemiel","spring"],["Alkuniel","someone"],["Alkutiel","something"],["Alsaet","all"],["Alsaron","a lot"],["Altad","angel"],["Altadiel","angelic"],["Altheron","celebration"],["Altheronen","celebrations"],["Alzam","some, small"],["Alzamette","a little bit"],["Alzamiel","small"],["Amlano","plane"],["Amlassa","lord"],["Amlassaen","lords"],["Anar","to derive"],["Anartemor","void"],["Andonde","to get together"],["Andondiel","together"],["Anure","to find the percentage"],["Anze","to wait"],["Ara","air"],["Aranea","music"],["Araneteror","palace"],["Araneteroren","palaces"],["Araneteroren tero","palace code"],["Aranioniol","classical, instrumental"],["Aranor","fire"],["Araton","end"],["Ardanat","blessing; to bless"],["Arde","to live"],["Ardent","life"],["Armora","backpack"],["Arse","to die"],["Arsont","death"],["Arsontiel","dead"],["Artero","garlic"],["Asade","to map"],["Asado","map"],["Asar","professor"],["Asardiel","female professor"],["Asarsiel","male professor"],["Asdano","folk/traditional"],["Asdaron","people, folk, nation"],["Asdaroren tero","civil code"],["Asdarse","to populate"],["Asdha","pain"],["Asdhama","suffering"],["Asdhe","to pain to ache"],["Asmarsdalia","monarchy"],["Astaelle","star; ethereal; to star"],["Astaellen","stars"],["Astaellue","I star"],["Astonde","while"],["Atawe","to hope"],["Atawo","hope"],["Atrendor","polygon"],["Atrendoralue","17-sided polygon"],["Avlas","out"],["Avlaset","outside"],["Avlasse","out, away"],["Avra","flag, banner (Russian: znamya)"],["Awareztexa","metro station"],["Awarwa","subway"],["Azmene","to strengthen"],["Balera","cappuccino brown"],["Balhanqe","to mask"],["Balhanqo","mask"],["Balhanqoen","masks"],["Baljeoie","happy"],["Balone","ship"],["Bane","to sit"],["Bankla","grass"],["Bano","seat"],["Basdaor","to tear apart, to break"],["Basdaortet","broken"],["Belhar","to be betrayed"],["Belion","March"],["Bem","beard"],["Benuriop","computer"],["Bera","river"],["Bersan","triangle"],["Bew","on"],["Bjalo","today"],["Blaklo","harem"],["Blatermo","summer"],["Blave","to wing"],["Blavo","wing"],["Blejam","purple"],["Bnoto","front"],["Bnotomarto","frontline"],["Bone","to jump"],["Bono","jump"],["Boplo","self"],["Branet","name, title"],["Branoio","rap"],["Broncation","Cossack"],["Caemoliato","sovereignty"],["Caheg","cat, brick"],["Caher","to close"],["Came","to wash"],["Candhare","to light"],["Candhor","light"],["Candhore","to shine"],["Catieon","spring"],["Chritelion","tulip"],["Cillielio","anchor"],["Claemoen","handcuffs"],["Claer","to seize"],["Claerer","seized ( person)"],["Clio","harp"],["Cvato","hand"],["Cvghaet","tap, faucet (Russian: kran)"],["Czatoe","village"],["Daemailia","universe"],["Dahen","why"],["Dahletqwesse","1/2"],["Dalessera","chaotic darkness"],["Dalset","brother"],["Dalsos","as if; of that, this"],["Daqwe","to add"],["Dareder","radient light"],["Darsation","July"],["Darse","to be"],["Darstet","it was"],["Das","end"],["Dasa","legal"],["Dasame","to blacken"],["Dasamoel","black"],["Dasar","morning"],["Dasdael","kingdom"],["Dasdonie","dasdon"],["Dasqere","to act"],["Dasqeresse","acting"],["Delse","that"],["Demoelor","eastern script"],["Deramlada","Tuesday"],["Desdiele","members"],["Deso","milder, more appropriate version of bajo"],["Dewqer","danger"],["Dfanorsa","omelette"],["Dhaeret","home"],["Dharhar","king"],["Dharharer","kingdom"],["Dharhe","you (high register, roughly “Your Grace”)"],["Dharjenite","they (formal)"],["Dhorenheres","central script"],["Dhoresa","northern script"],["Dhrahir","war"],["Dielmara","lady"],["Dielmartewo","prostitution"],["Dræg","male name meaning field"],["Dsahirdion","republic"],["Ealio","empire"],["Ealiojordiel","empress"],["Ealiojorsiel","emperor"],["Eation","camera"],["Eatione","to camera"],["Ebjalo","tomorrow"],["Ebonire","consequently"],["Ebono","consequence"],["Ebonoen","consequences"],["Ebonor","to consequence"],["Efelienion","June"],["Egilition","December"],["Ehsade","to honor"],["Ehsaed","honor"],["Ekbi","fact"],["Ekhart","hell"],["Ekladdeon","January"],["Elakea","justice"],["Elhamion","loyalty"],["Elko","sand"],["Elkuniel","anyone"],["Elkutiel","anything"],["Ellenikiel","Greek"],["Elmena","change, break (Russian: peremena)"],["Elmera","yellow"],["Elrohim","god"],["Elrohimen","gods"],["Em","and, &"],["Emiliermomlada","Friday"],["Emlada","destiny"],["Emlakieon","August"],["Emleratoae","dignity"],["Emral","while"],["Emu","i; also the number 1"],["Emue","I am"],["Emulio","first"],["En","plural countable"],["-en","plural ending for countable nouns"],["Enama","beach"],["Endpre","to stare"],["Eneliona","school"],["Enne","but"],["Eppel","empathy"],["Eqwero","lieutenant"],["Eqwerte","to examine"],["Era","just, genau"],["Erdal","let’s"],["Erdale","to let"],["Erdalemue","let me"],["Erdanatep","destiny"],["Erdoma","indigo"],["Erduner","to pass"],["Erh","hut"],["Erkza","raven"],["Ermaldieliana","queen"],["Eron","official currency of Euredius, backed by Euredium"],["Eros","ego"],["Erswerdalia","schaudenfreude"],["Ertew","ellipsis"],["Ertoma","royal blue"],["Erwetion","customer"],["Eryo","here"],["Erze","to scandal, to scream"],["Erzo","scandal, scream"],["Eshare","to leave"],["Esmahire","particularly, specifically, undeniably"],["Esse","noun-forming suffix"],["Et","it"],["Eteel","sweet"],["Etrusion","lens, viewing tube (Russian: smotrovaya trubka)"],["Etrusionen","binoculars"],["Euredi","folk of Euredius"],["Euredium","rare regenerating metal backing the eron"],["Ewerke","to doom"],["Examole","to curate"],["Exwariopolion","exhibition"],["Ezeq","bandage (Russian: bint)"],["Eztexa","station"],["Fadilionpa","paradise"],["Fakire","to forget"],["Falher","train"],["Fallle","to write"],["Fana","candy"],["Far","ashes"],["Farete","to perfect"],["Faweta","laptop"],["Fendumlada","Thursday"],["Ferenos","corporate"],["Ferqera","volleyball"],["Fewistesse","help"],["Fganlo","away"],["Fgha","cold (illness), angina (Russian: prostuda)"],["Fghana","leaf"],["Fghanasion","stratosphere"],["Fgharsianio asdaron","primitive nation"],["Focho","daughter"],["Folp","smoke"],["Franensen","financial/economic"],["Franensenerqwe tero","financial citizen code"],["Franes","western script"],["Fremalion","October"],["Frenje","to contemplate, to ponder, to condescend"],["Ftahir","braid, to braid"],["Ftahiren","braids"],["Ftarel","birch"],["Ftrael","down"],["Gane","brother"],["Garda","betrayal"],["Garde","to betray"],["Garhatoret","university"],["Garhatoreten tero","academic code"],["Gatoma","sugar"],["Gere","dad"],["Geterion","February"],["Ghamroe","angry"],["Ghanel","willow"],["Ghanero","general"],["Ghanion","May"],["Ghare","to holler"],["Ghas","association"],["Ghassa","democracy"],["Ghatemore","to tell (Russian: veshat)"],["Ghe","snake"],["Gheme","to stop"],["Ghenadion","virtue"],["Gher","to snake, to snitch"],["Ghtra","gossip"],["Glojrwe","horse"],["Gome","to film"],["Gomen","cheese / cheeze"],["Gomo","film"],["Gref","sale"],["Haet","to go; also the winter holiday Haet, a mix of Christmas and Thanksgiving"],["Halkmirio","bank"],["Halkmiriondiel","female bank"],["Halkmirionsiel","male banker"],["Hamer","to strum"],["Hamera","place of worship"],["Hamion","September"],["Hanaela","soul"],["Hanar","to sing"],["Hanaro","song"],["Hanarovbalo","requiem"],["Hanera","marathon"],["Hanol","shower"],["Hanole","to shower"],["Haqe","sister"],["Hara","head"],["Hare","to use"],["Harlema","flower"],["Haron","church (colloquial)"],["Harue","church"],["Haruen","bible"],["Hassa","coffee"],["Hew","mustache"],["Hgahet","wall"],["Hgamoet","circus"],["Hganotirionkolle","armored personnel carrier (Russian: bronetransporter)"],["Hgomas","reindeer"],["Hgonto","deer"],["Hgopo","gazelle"],["Hiti","long"],["Hja","serpentine"],["Hjente","they"],["Hlaion","tank"],["Holo","shore"],["Hter","salon"],["Htera","earth"],["Humopenion","windowsill"],["Ig","or"],["Ihamdindorenor","wisdom"],["Ihsadi","sword, prophet"],["Ikielle","to change"],["Ikiellia","change"],["Ikionioplacintirion","parliament"],["Ilion","sky"],["Ilionama","jazz"],["Ilionpaljar","cloud"],["Ilral","if"],["Inf","to x / infinitive"],["Iodio","prop"],["Iohaeto","glass"],["Ion","eon"],["Iopilia hanaro","song of the century"],["Ipe","to walk"],["Isimo","video"],["Iuop","suitcase"],["Iyepoel","new"],["Jack Maha","Jack Sparrow"],["Jakel","outcast, donkey"],["Jakeler","to exile"],["Jaleo","ground"],["Jalete","to share"],["Jamaret","mission"],["Jame","to like"],["Jamor","aorta"],["Jana","food"],["Jaranomeranor","courage"],["Jaroteqwesse","1/8"],["Jaxat","rosemary"],["Jhalit","fine, of noble"],["Jhara","the high priest / high priest"],["Jhateliar","dukedom"],["Jhateliardiel","duchess"],["Jhateliarsiel","duke"],["Jko","bat (the sports kind)"],["Jkomiom","microphone"],["Jlalo","artery"],["Jlam","fraud"],["Jom","crime"],["Kanne","man"],["Kelo","vein"],["Kemetiel","Egyptian"],["Kjahor","kill"],["Kjanomarepia","choice of life"],["Kjanora","choice"],["Kjara","red"],["Kjaten","open spaces, expanses (Russian: prostory)"],["Kjlatel","cough"],["Kjlatele","to cough"],["Kladena","waltz"],["Klano","marshal"],["Klappono","captain"],["Klat","flesh"],["Klemiel","past/passed (adj)"],["Klemo","past (noun, concept)"],["Klepomraqwesse","1/4"],["Klopio","pain that was inflicted upon someone by someone or something"],["Ksam","fridge"],["Laahte","somehow"],["Lahatom","cookie"],["Laket","to make someone do they don’t want to do"],["Lakone","to remember"],["Lakono","remembrance"],["Lallo","milk"],["Lamer","to lay/ to lie"],["Laru","friend"],["Lashon","velvet"],["Latler","silk"],["Latre","to latinize"],["Latriel","Latin"],["Latrohanar","to sing Latin"],["Leh","as"],["Lelje","he"],["Lem","of"],["Lemio","accordion"],["Lemiro","because"],["Lemli","about"],["Lepomorena","bass clef"],["Ler","more"],["Lew","much"],["Lezlion","reggae"],["Lkale","to treat"],["Lmata","moon"],["Lmatacandhor","moonlight"],["Lohinirione","to philosophize"],["Lohinirioner","philosopher"],["Lohinirionio","philosophy"],["Loighesse","to forgive"],["Loighessesse","forgiveness"],["Loion","atlas"],["Lokj","mosquito"],["Lopjalo","yesterday"],["Lore","to do"],["Ltarher","to bye, bye"],["Machem","piano"],["Mae","how"],["Maha","sparrow"],["Malk","group"],["Mama","mother"],["Mano","existence"],["Manoe","shore"],["Mares","sea, water"],["Maret","star"],["Maron","star"],["Martew","fuck"],["Marto","line"],["Masmed","mirror"],["Masmedalia","star mirror"],["Mawer","square"],["Mawt","knife"],["Maxaim","desire"],["Maxam","dumb"],["Melie","she"],["Menewesqwe","to beautify"],["Mensqwe","peace"],["Meramlada","Monday"],["Mereda","accordion"],["Meros","memory"],["Mersael","along"],["Mesa","smile"],["Meser","how"],["Mesmane","to love"],["Mesmano","love"],["Mesmediel","woman, girl, female"],["Mesmerandoriantielianor","Übermensch"],["Mesmesiel","man, male"],["Meta","world"],["Mierione","to care"],["Mierionesse","care"],["Mkale","to cure"],["Mlaka","island"],["Mlemo","tooth"],["Mne","sun"],["Mnesardo","sunrise"],["Mnesaret","sunset"],["Molem","duty"],["Mollea","pastel"],["Molpen","bell"],["Molre","to listen"],["Mopial","mountain chimp"],["Morotos","freedom"],["Mrale","to judge"],["Mrenomia","mrenomhood"],["Mrenomidiel","mrenomess"],["Mrenomisiel","mrenom"],["Mue","my"],["Muen","mine"],["Mune","to continue"],["Muye","my"],["Nahar","royalty (noun)"],["Naharen","royalties"],["Nahsena","north"],["Name","to list"],["Namo","list"],["Namunielopellerikoda","main control center, headquarters (Russian: shtab)"],["Namutiel","native, kindred (Russian: rodnoe)"],["Nara","never"],["Naram","water"],["Narhael","southern script"],["Narmaren","tears"],["Narsitien tero","galactic/intergalactic code"],["Naru","water"],["Nehgarer","vagabond"],["Nem","voice"],["Nemo","nothing"],["Nempolion","vocal, acapello"],["Nere","to think"],["Nerotionvertaro","television"],["Ners","nope"],["Nerse","eye"],["Nersen","eyes"],["Nersenomera","drama"],["Nert","none"],["Nerver","radio"],["Nessa","female name meaning green light"],["Nezneome","to rest"],["Niehlkuniel","no one, nobody"],["Niehlkutiel","nothing"],["Nono","grandmother"],["Noriel","green"],["Nortesvemo","deoxyribo"],["Nunchime","forest"],["Nuop","fun"],["Nv","TV"],["Oioan","sew"],["Oklio","too"],["Ol","at"],["Ollolienel","meta"],["Olo","ear"],["Olodion","opera"],["Oloere","to eavesdrop"],["Olreket","blood"],["Oma","sky blue, blue"],["Onki","cult"],["Onokion","culture"],["Onte","past perfect noble third person suffix for the verb valor"],["Opalania","dress of an angel (altad dress)"],["Ope","to storie"],["Ople","ago"],["Oplomo","swamp"],["Opo","storie"],["Oprie","alphabet"],["Opte","son"],["Orliodaruqweriel","metamorphic"],["Orliondaruqwer","to metamorphisize"],["Orliondaruqwerie","metamorphosis"],["Ouel","pine"],["Ourte ghas","bar association"],["Penne","woman"],["Pion","splinter"],["Pliob","shell, projectile (Russian: snaryad)"],["Pliobkello","machine gun (Russian: pulemyot)"],["Pliobkelloer","machine gunner (Russian: pulemyotchik)"],["Pliona","Pleiades"],["Polion","chrysanthemum"],["Polle","girl"],["Polleame","to exist"],["Polleamula","existence"],["Polmera","golden yellow"],["Polratoma","treble clef"],["Ptilemien","Ptolemies"],["Puio","pill"],["Pulo","pillow"],["Pwertiarion","countship"],["Pwertidiel","countess"],["Pwertisiel","count"],["Qadfe","to swing"],["Qadfo","swing"],["Qaem","who"],["Qahsana","east"],["Qalianion","cosmos"],["Qalk","rhyme"],["Qalke","to rhyme"],["Qalomo","cart (Russian: telezhka)"],["Qalte","to talk"],["Qalter","to chat"],["Qanel","want (noun)"],["Qarahetion","epic poem"],["Qasero","vegetable garden (Russian: ogorod)"],["Qawero","stretcher (Russian: nosilka)"],["Qeneresu","judicial"],["Qeneresuet","jurisdiction"],["Qera","ball"],["Qeraso","scroll"],["Qewaret","nightmare"],["Qewatler","garment"],["Qey","when"],["Qolleoma","white"],["Qope","to fly"],["Qpolmato","field"],["Qrem","rain"],["Qreme","to rain"],["Qreoa","mantle (Russian: mantiya)"],["Qumie","sad"],["Qwartession","chandelier"],["Qwasat","wallpaper"],["Qweratometion","airport"],["Qwere","to ask"],["Qwesse","note"],["Ralhar","faith"],["Ralhare","to believe"],["Ralu","17; the almighty Lord, creator of everything and nothing"],["Raluqwesse","1/17"],["Ramada","battalion"],["Ramara","pink"],["Ramona","car"],["Ramonaen","cars"],["Ramonakelhi","car engine"],["Ramtalion","rose"],["Randhar","to metal, to metalize"],["Randharon","metal"],["Ranso","leather"],["Ranto","tarantula"],["Rarda","night"],["Rarsatomqwesse","1/32"],["Rarsero","power"],["Rase","to subtract"],["Rasso","euredius sport, a 9-vs-9 water-based ball sport combining surfing and elements of American football and tennis"],["Rato","rhino"],["Rayare","to gloom"],["Rea","spoon"],["Relo","circle"],["Remioa","center"],["Ren","on, to"],["Retme","with"],["Retse em morop","mergers and acquisitions"],["Retwe","with"],["Rew","grandfather"],["Rewqa","support"],["Rhanto","bottle"],["Rhasos","earthlings"],["Rof","face"],["Rtael","question"],["Rtana","hair"],["Rtanubo","shampoo"],["Rtarel","oak"],["Rtene","to understand"],["Rtern","spider"],["Rtero","tomato"],["Rtese","to have"],["Rtesue","I have"],["Rtiene","run"],["Rtu","ant"],["Rtya","toga"],["Rusiel","Russian"],["Ruso","Russia"],["Ryr","to cut"],["Ryrtren","scissors"],["Rzartesse","idea"],["Sa","tea"],["Sade","to bow"],["Sadgane","nurse ( male)"],["Sadhaqe","nurse (female)"],["Sadmene","to medicate"],["Sadmeniel","medical"],["Sadmeno","medicine"],["Sadmer","doctor"],["Sadmodemo","hospital"],["Sadropo","diagnosis"],["Samme","boy"],["Samralada","Wednesday"],["Sandeqoedolada","Saturday"],["Sardar","mountain lion with indigo-pink gradient fur"],["Sarde","to swim"],["Sareloren tero","judicial code"],["Sdafe","to wake up"],["Sfalia","funk"],["Sfarher","to drink"],["Sforo","pipe"],["Sgaele","to enter"],["Sgaelo","entry"],["Somnoferast","to sleep"],["Sorner","to proclaim"],["Stilaonlo","Stalin"],["Swertiel","ruddy, rosy (Russian: rumyanyi)"],["Szatoe","soil"],["Tamutiel","blessed, gracious (Russian: blagodatnoe)"],["Taremnoren tero","criminal code"],["Tassa","dance"],["Te","in"],["Telsar","silence"],["Telse","to silence"],["Tem","thief"],["Tener","commercial"],["Teo","fork"],["Tepore","to read"],["Teposo","book"],["Teq","gun"],["Terhadiel","policewoman"],["Terhasiel","policeman"],["Terhat","police"],["Tero","code, rule"],["Terqera","tennis"],["Terra","monastery"],["Terreora","brown"],["Tete","saint/pope"],["Thele","tree"],["Tiol","area"],["Tjar","day"],["Tjer","now"],["Tjero","time"],["Tjerodioner","clock"],["Tjeropolekello","pocketwatch"],["Toperqe","convict"],["Trama","plaster"],["Trartene","to cry"],["Trartenohanaro","cry song"],["Treiwertse","to try"],["Tremloda","Sunday"],["Trew","stick"],["Trewqera","stickball"],["Trjars","demons, troubles"],["Tsae","mind"],["Tsaenor","knowledge"],["Tsanora","guitar"],["Tuom","far"],["Tur","you"],["Ture","you are; your"],["Turé","your"],["Tuyu","salary"],["Tyato","path, way, road"],["Tyuelo","wood (material)"],["Uble","to disc"],["Ublo","disc"],["Ublokello","dvd"],["Ubo","soap"],["Udieomartewo","pornography"],["Uel","spruce"],["Uempalor","acid"],["Uialhdiel","baroness"],["Uialhio","baronhood"],["Uialhsiel","baron"],["Uknael","maroon"],["Ulo","barrel"],["Umole","to lose"],["Umolo","loss"],["Umurion","military"],["Uop","bed"],["Upo","mushroom"],["Uprelle","to save"],["Upsumo","towel"],["Upxi","scalpel"],["Urdiame","gerund"],["Ure","to divide"],["Urhatqwesse","1/16"],["Uripio","pop"],["Urse","to poison"],["Ursu","curse, poison"],["Utiemo","bench"],["Utioala","south"],["Utre","to open"],["Utrtet","open, opened"],["Uxe","to hiccup"],["Uxi","hiccup"],["Uyto","room"],["Uytopo","kabinet"],["Vab","arm"],["Vacado","window"],["Vacadoen","windows"],["Vaghato","talent"],["Vahasa","plant"],["Vala","mouth"],["Valew","tongue"],["Valhar","to convey"],["Valhara","airship, dirigible (Russian: dirizhabl)"],["Vallenom","winter"],["Valmera","wind"],["Valor","to speak"],["Valoreta","indication, speaking of"],["Valoribno","he speaks (hr)"],["Valorielle","she speaks (hr)"],["Valorste","they speak (hr)"],["Valorteqwe","you (plural) speak (hr)"],["Valortre","you speak"],["Valorue","I speak"],["Valorwes","it speaks (hr)"],["Vamhar","to fear"],["Vamharo","fear"],["Varenen","parents"],["Varenos","parents"],["Varorsation","vocabulary, lexicon"],["Vasahana","half a year"],["Vasation","November"],["Vaso","half"],["Vballe","to grieve"],["Vbalo","grief"],["Vcahet","wheel"],["Vcanop","horizon"],["Velohet alzam","council of small"],["Veq","lab"],["Veqaenor","laboratory"],["Verankle","to electrocyte"],["Verankleo","electricity"],["Verner","community"],["Vernere","to commute"],["Vexate","to smoke"],["Vexation","tobacco"],["Vha","bat (the animal) 🦇"],["Vhalio","battle"],["Vhatres","marble"],["Vikioplariateposomilia","constitution"],["Vole","to lie"],["Volere","to deceive"],["Voleresse","deception"],["Vraner","battle"],["Vropio","bus"],["Vropioztexa","bus station"],["Vun","axe"],["Vune","to axe"],["Warotse","to know"],["Warqner","nonprofit"],["Webah","poem"],["Webaho","poetry"],["Webahoer","poet"],["Webar","to poetize"],["Wemar","to laugh"],["Wemir","to eat"],["Weranmol","puddle"],["Werde","to want"],["Weriel","cherry"],["Wernadi","shelf (Russian: polka)"],["Werpe","sailor"],["Werqera","basketball"],["Wert","to multiply"],["Xadi","lamp"],["Xaede","to cement"],["Xaedo","asphalt"],["Xalion","April"],["Xcaer","to give"],["Xcanta","mountain"],["Xot","oil"],["Xvaed","table"],["Xzupie","shop, store"],["Xzupiehassa","coffeeshop"],["Yal","plate"],["Yalte","to come"],["Yate","to stand"],["Yerferhalioa","west"],["Yet","apple"],["Yeut","pineapple"],["Yiopel","soon"],["Yit","onion"],["Yolp","ocean"],["Yteura","grey"],["Yteurmana","shade"],["Ytierion","horizon"],["Yupolion","globe"],["Yute","to begin"],["Yuto","beginning"],["Yutro","goblet"],["Zaeno","notebook"],["Zation","curtain"],["Zatumo","fall"],["Zaza","kid"],["Zende","to sleep"],["Zendesse","sleep"],["Zfaer","to carry"],["Zhemoir","chocolate"],["Zhere","to calligraph / to caligraph"],["Zherot","ink"],["Dfa","egg"],["Rumonor","truth"],["Faretonieon","perfection"],["Tamopleado","purpose"],["Qelatoelion","sacrifice"],["Erortionio","unity"],["Somnoferser","to sleep forever"],["Reter","without; digger"],["Ardon","demise"],["Menewera","beauty"],["Nahariel","royal (adj.)"],["Mer","for"],["Drew","in"],["Arandorse","noble people"],["Elzelle","to rule"],["Tipoleario","bewilderment, bafflement, perplexity"],["Dsaemia","paper"],["Dsamiopio","document"],["Fsamixsien","earphones"],["Zakherio","house"],["Ecliata","picture, painting"],["Verbiolio","text"],["Xcamere","to play"],["Xcamerse","to place"],["Hlatipia","roof"],["Hlamitio","terminal, console"],["Dsafio","server"],["Eto","shoe"],["Etoen","shoes"],["Candhormisia","lamp"],["Vernmariop","company, organization"],["Rasio","office"],["Yutmeo","socket"],["Fallhere","to type"],["Wqerwonio","desk, cabinet"],["Esada","over"],["Esadatjero","overtime"],["Esde","to work"],["Esdeme","to make an effort"],["Esadesde","to overwork"],["Esadesdeme","to overexert oneself"],["Dhalime","to welcome"],["Thimeriopia","settings"],["Eztamela","menu"],["Excatiore","to navigate"],["Yiopiatiapo","notification"],["Yiopiatiapoen","notifications"],["Scamia","search"],["Scame","to search"],["Efleotamakollio","application"],["Efleota","app"],["Fallharkokollio","messenger"],["Fallharke","to message"],["Omiaplotio","telephone"],["Omia","phone"],["Omiaple","to phone, to call by phone"],["Askame","to happen"],["-ue","I (subject suffix on verbs)"],["-tre","you (subject suffix on verbs)"],["-siel","he (subject suffix on verbs)"],["-diel","she (subject suffix on verbs)"],["-ewe","they (subject suffix on verbs)"],["-uye","we (subject suffix on verbs)"],["-a, -o, -io, -ia","noun endings"],["-e","verb ending"],["-el","adverb ending"],["-iel","adjective ending"],["-er","agent ending (a person who does or practises something)"],["Al-","some- (prefix)"],["El-","any- (prefix)"],["Nieh-","no-, none (prefix)"],["Thesmo","nominal sentence form (a sentence with no modification)"],["Thesme","verbal sentence form"],["Thesmel","adverbial sentence form"],["Thesmi","propositional sentence form"],["Thesmimosi","propositional form with a neutral, official character"],["Thesmidiel","propositional form, female addressee, low register"],["Thesmisiel","propositional form, male addressee, low register"],["Thesmielle","propositional form, female addressee, high register"],["Thesmibno","propositional form, male addressee, high register"],["Thesmibnoelle","form that also marks the speaker: high-register male to high-register female"],["Thesmibnodiel","high-register male to low-register female"],["Thesmielleibno","high-register female to high-register male"],["Thesmidielelle","low-register female to high-register female"],["Thesmidielibno","low-register female to high-register male"],["Thesmiellesiel","high-register female to low-register male"],["Thesmibnosiel","high-register male to low-register male"],["Thesmisieldiel","low-register male to low-register female"],["Thesmidielsiel","low-register female to low-register male"],["Efletamio","digital minimalism"],["Efletame","to practice digital minimalism"],["Efletamiel","digitally minimalist"],["Efletamel","in a digitally minimalist manner"],["Efletamer","practitioner of digital minimalism"],["Melar","rhetorical particle (rhetofier)"],["Melas","rhetorical particle (rhetofier)"],["Melhar","rhetorical particle (rhetofier)"],["Meljar","rhetorical particle (rhetofier)"],["Dasdaemos","rhetorical particle (rhetofier)"],["Avlass","ending particle"],["Vlass","ending particle"],["Vless","ending particle"],["Mlass","ending particle"],["Erlass","ending particle"],["Amlass","ending particle"],["Ahlu","ending particle"],["-ette","adverbial ending"],["Asdondel","together (adverb)"],["Asdondiel","together (adjective)"],["Asdonde","to be together"],["Renu","2"],["Semu","3"],["Femu","4"],["Emmu","5"],["Sapu","6"],["Delmeau","7"],["Omu","8"],["Nemu","9"],["Elmet","10"],["Elherto","11"],["Elrento","12"],["Elsento","13"],["Elfento","14"],["Elmunto","15"],["Elsapto","16"],["Elomto","18"],["Elneto","19"],["Renmlet","20"],["Renmlet emu","21"],["Semlet","30"],["Femlet","40"],["Emlet","50"],["Saplet","60"],["Delmet","70"],["Omlet","80"],["Nemlet","90"],["Hort","100"],["Enghenrio","1,000"],["Opliomuliado","1,000,000"],["Opliomuriamio","1,000,000,000"],["Opliomudiamrio","1,000,000,000,000"],["Elimia","second (unit of time)"],["Edelimia","nanosecond"],["Emdarelimia","millisecond"],["Ghimia","minute"],["Limia","hour"],["Impel","right"],["Elkel","left"],["Emel","middle"],["Gha","soup"],["Vhlat","salad"],["Himio","potato"],["Shio","beet"],["Shia","radish"],["Ertoi","berry"],["Ghamasso","a dish of Euredius: potatoes bathed in a batter of egg, salt, milk, sugar, mkala sauce and cheese, then baked for 1.5 to 2 hours"],["Mkala","a sauce used in ghamasso"],["Rete","to dig"],["Retkollo","quarry"],["Retka","shovel"],["Xade","to use a pickaxe"],["Xada","pickaxe"],["Arsontmartka","coffin"],["Martka","box"],["Arsonkalio","grave"],["Kalio","place"],["Wetel","other"],["Erwetel","another"],["Hemlel","either"],["Niehemlel","neither"],["Ewerteles","whether"],["Estremes","which"],["Dreweryo","herein"],["Reneryo","hereto"],["Qweneryo","hereby"],["Esmop","thus"],["Bleryo","there"],["Drewbleryo","therein"],["Renbleryon","thereto"],["Merbleryo","therefore"],["Gherdanel","forward"],["Gherdanelen","forwards"],["Emhar","back"],["Emhardanel","backward"],["Emhardanelen","backwards"],["Impedanel","rightward"],["Elkedanel","leftward"],["Qwenlehet","whereby"],["Renlehet","whereto"],["Drewlehet","wherein"],["Ellehet","anywhere"],["Tremiael","a priori"],["Ekbiatirel","ipso facto"],["Tumio","guilt"],["Tumiel","guilty"],["Tume","to guilt"],["Dasge","to act"],["Dasgo","action"],["Tumieldasg","actus reus"],["Tsaetumiel","mens rea"],["Hgojaralha","bona fide"],["Etara","street"],["Melera","avenue"],["Esdelera","intersection, crossroads"],["Qwisi","lane, side street"],["Arqwisi","yard"],["Ghitisi","u-turn"],["Alkatieliel","hearty (adj.)"],["Na2Yu1","H2O, the formula for water"],["Troio","Troy"],["Komerio","Homer"],["Iliama","Iliad"],["Odimei","Odyssey"],["Iulio Kesao","Julius Caesar"],["Okiolia","history"],["Okioliaer","historian"],["Okioliel","historical"],["Okiole","to history"],["Okiolel","historically"],["Erdaridiamia","kleos"],["Vlamio","generation"],["Vlame","to generate"],["Ytrakollo","keyboard (key mechanism), typewriter"],["Ewer","across"],["Niehme","without"],["Qwen","by"],["Hudiario","hunger"],["Hudiariel","hungry"],["Hudiare","to hunger"],["Gelario","thirst"],["Gelariel","thirsty"],["Gelare","to thirst"],["Alhaim","within (usually)"],["Maros","have"],["Bajo","damn"],["Fadio","length"],["Fardar","unit of length, 1.7 m"],["Efardar","unit of length, 1 nm"],["Emdarfardar","1.7 mm"],["Ecfardar","1.7 cm"],["Ecremfardar","1.7 km"],["Ghilia","meter"],["Ecghilia","centimeter"],["Ecremghilia","kilometer"],["Ekleto","weight"],["Ekletio","scale (for weighing)"],["Dsamiad","unit of weight, 1.7 kg"],["Ecdsamiad","1.7 g"],["Emdardsamiad","1.7 mg"],["Edsamiad","1.7 ng"],["Jimio","gram"],["Ecremjimio","kilogram"],["Vioporiadio","temperature"],["Vahnera","unit of temperature, 1.7 °C (the regular measurement)"],["Ghitiona","1.7 kelvin"],["Fhitiona","measurement of cold; 1 fhitiona is −1.7 vahnera"],["Vahnedio","the phenomenon at 0 vahnera, below which temperatures count as fhitiona"],["Oklopmeradio","procrastination"],["Ghafama","tolerable"],["Faghama","severe"],["Xaghama","inoperable, beyond repair"],["Banhadion","force"],["Bralieio","unit of force, 1.23 N"],["Ecrembralieio","kilonewton"],["Samdar","unit of electric current, 1.7 ampere"],["Esatoa","unit of voltage, 1.7 volt"],["Ersatoa","unit of power, 1.7 watt"],["Temariadimia","gravity"],["Temariadimiel banhadion","gravitational force"],["Temariadimiel ghybio","gravitational constant, written T (tau)"],["Ghybio","constant"],["Feda","mass"],["Boliamo","the metric system of Euredius"],["Fajomiato","the physics metric system of Euredius, like the SI"],["Haneriete","the temple"],["Narae","songs of the faith (plural of nara)"],["Naem","the Euredi bible"],["Rahara","the Euredi religion"],["Narena","the bond of marriage that only death can separate"],["Eronien","the two horses that saved Ralu’s life when he was alive"],["Doros","the black flames into which Ralu was thrown"],["Narse","knout"],["Hanor","the author or title of the 17 books of scripture"],["Benerius","male name meaning fallen phoenix"],["Nera","female name; the mother of Benerius"],["Malhili","the green light (a title of Nera)"],["Darlek","pet bird whose spread wings look like living kaleidoscopes"],["Marhat","member of the antennaed people with whom the Euredi once mixed"],["Arsont mara","death water, the water of death"],["Lkan","shark (named in a warning about swimming in the Arsont mara)"],["Qamorio ior","mafia bird"],["Itopliarkza","grave raven"],["Sforiagniarkza","dignified raven bloodline"],["Hiltarianrkza","elite raven bloodline"],["Qemalia","a group of weed lovers who consider themselves transcendent gods who teach the secrets of the universe"],["Adsamioen","lost in smoke (what people call the Qemalia)"],["Fghamio","amish people, who live on the border between the center and the west"],["Aertaria OP","victory FM, a radio station that plays funk"],["Emalia Erzalina","a singer, best loved in her acoustic versions"],["Amarisia","real estate company to which all companies answer, comparable to BlackRock"],["Arkiatia","company that produces airplanes"],["Oxop","version control tool"],["Esamia","the Euredius analog of Jira"],["Asmaria","a low-level programming language"],["Esadiona","the solar system in which Euredius is located"],["Simeria","a planet of the Esadiona system"],["Eqerio","the second planet, much like Venus"],["Qalimia","the third planet, like Tatooine"],["Emaria","the fourth planet, like Naboo"],["Ahle","strong insult related to stupidity"],["Lrej","strong insult related to stupidity"],["Delh","strong insult related to stupidity"],["Gfant","strong insult related to stupidity"],["Dohe","weak insult related to stupidity"],["Kgek","weak insult related to stupidity"],["Bnejo","weak insult related to stupidity"],["Darja","weak insult related to stupidity"],["Gaho","strong vulgar word related to “fuck”"],["Frasse","strong vulgar word related to “fuck”"],["Jkaljeko","strong vulgar word related to “fuck”"],["Xenort","strong vulgar word related to “fuck”"],["Rtale","weak vulgar word related to “fuck”"],["Zosp","weak vulgar word related to “fuck”"],["Zejo","weak vulgar word related to “fuck”"],["Ine","strong insult related to “bitch”"],["Lakalo","strong insult related to “bitch”"],["Lejem","strong insult related to “bitch”"],["Ghatre","strong insult related to “bitch”"],["Trei","weak insult related to “bitch”"],["Tyno","weak insult related to “bitch”"],["Betra","weak insult related to “bitch”"],["Fhano","strong vulgar word related to “shit”"],["Fdael","strong vulgar word related to “shit”"],["Mhert","strong vulgar word related to “shit”"],["Ilje","weak vulgar word related to “shit”"],["Nonheron","weak vulgar word related to “shit”"],["Gfate","weak vulgar word related to “shit”"],["Asera","helium"],["Naruna","hydrogen"],["Erta","lithium"],["Qwer","sodium"],["Ghta","beryllium"],["Esma","magnesium"],["Etma","boron"],["Ecladia","carbon"],["Emerja","nitrogen"],["Yumoa","oxygen"],["Ytra","fluorine"],["Ekela","neon"],["Hjarta","aluminum"],["Oplara","silicon"],["Vharta","phosphorus"],["Venra","sulfur"],["Erwa","chlorine"],["Tramia","argon"],["Nakia","potassium"],["Esdasa","calcium"],["Amrena","scandium"],["Eopiliara","titanium"],["Bnera","vanadium"],["Mnersa","chromium"],["Lka","manganese"],["Iola","iron"],["Eola","cobalt"],["Zola","nickel"],["Vladia","copper"],["Bvera","zinc"],["Euredia","euredium"],["Lmaria","gallium"],["Hermadia","germanium"],["Utrwa","arsenic"],["Htia","selenium"],["Minara","bromine"],["Jkopa","krypton"],["Ehsara","rubidium"],["Ehsarta","strontium"],["Btira","yttrium"],["Ecleria","zirconium"],["Zimia","niobium"],["Zimdia","molybdenum"],["Gtaria","technetium"],["Ewrtweria","ruthenium"],["Msadia","rhodium"],["Emeliaria","palladium"],["Vremkatia","silver"],["Evreta","cadmium"],["Eriomia","indium"],["Farha","tin"],["Klopia","antimony"],["Dsamoa","tellurium"],["Jopila","iodine"],["Zemidia","xenon"],["Vcada","cesium"],["Hlsalia","barium"],["Fhafa","lanthanum"],["Fhghatia","cerium"],["Ejemiriadia","praseodymium"],["Yiopimiridia","neodymium"],["Tyarioa","promethium"],["Smadia","samarium"],["Opioa","europium"],["Hagadioa","gadolinium"],["Homidia","terbium"],["Fyarioa","dysprosium"],["Aqweria","holmium"],["Ertwaripia","erbium"],["Nyxeria","thulium"],["Btiradia","ytterbium"],["Ubrea","lutetium"],["Umbrea","hafnium"],["Tibaria","tantalum"],["Epoliata","wolfram"],["Rtenopia","rhenium"],["Oplioa","osmium"],["Elketirionia","iridium"],["Urtaridia","platinum"],["Asmardeliaria","gold"],["Oporionia","mercury"],["Themilia","thallium"],["Erodioa","lead"],["Eketia","bismuth"],["Qarmidiaopolia","polonium"],["Rartiopia","astatine"],["Ersapilia","radon"],["Hgidia","francium"],["Hgamidia","radium"],["Ioplioa","actinium"],["Artmania","thorium"],["Uportiadiamia","protactinium"],["Vlassmadia","uranium"],["Mlakeadia","neptunium"],["Oplomoria","plutonium"],["Hasmadia","americium"],["Vneriopia","curium"],["Ewqerioplia","berkelium"],["Gharoteria","californium"],["Ghateriopia","einsteinium"],["Hermia","fermium"],["Kolopia","mendelevium"],["Jhalitia","nobelium"],["Larketia","lawrencium"],["Yupiria","rutherfordium"],["Kloridia","dubnium"],["Terbaria","seaborgium"],["Elimiriadia","bohrium"],["Uiopliriamia","hassium"],["Wertiamiaria","meitnerium"],["Rewartiamia","darmstadtium"],["Laopliadiria","roentgenium"],["Qamiliria","copernicium"],["Calimia","nihonium"],["Dsadimiria","flerovium"],["Adameniria","moscovium"],["Fadlaria","livermorium"],["Gharidimiliaria","tennessine"],["Orliamia","oganesson"]];
 const N1=['','emu','renu','semu','femu','emmu','sapu','delmeau','omu','nemu','elmet'];
 const T=['','elmet','renmlet','semlet','femlet','emlet','saplet','delmet','omlet','nemlet'];
 const TN={11:'elherto',12:'elrento',13:'elsento',14:'elfento',15:'elmunto',16:'elsapto',17:'Ralu',18:'elomto',19:'elneto'};
